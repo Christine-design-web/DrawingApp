@@ -38,16 +38,18 @@ const drawRect = (e) => {
     ctx.fillRect(e.offsetX, e.offsetY, prevMouseX - e.offsetX, prevMouseY - e.offsetY);
 }
 
+// creating new path to draw circle
 const drawCircle = (e) => {
-    ctx.beginPath(); // creating new path to draw circle
+    ctx.beginPath();
     // getting radius for circle according to the mouse pointer
     let radius = Math.sqrt(Math.pow((prevMouseX - e.offsetX), 2) + Math.pow((prevMouseY - e.offsetY), 2));
     ctx.arc(prevMouseX, prevMouseY, radius, 0, 2 * Math.PI); // creating circle according to the mouse pointer
     fillColor.checked ? ctx.fill() : ctx.stroke(); // if fillColor is checked fill circle else draw border circle
 }
 
+// creating new path to draw circle
 const drawTriangle = (e) => {
-    ctx.beginPath(); // creating new path to draw circle
+    ctx.beginPath();
     ctx.moveTo(prevMouseX, prevMouseY); // moving triangle to the mouse pointer
     ctx.lineTo(e.offsetX, e.offsetY); // creating first line according to the mouse pointer
     ctx.lineTo(prevMouseX * 2 - e.offsetX, e.offsetY); // creating bottom line of triangle
@@ -55,6 +57,7 @@ const drawTriangle = (e) => {
     fillColor.checked ? ctx.fill() : ctx.stroke(); // if fillColor is checked fill triangle else draw border
 }
 
+//creating new path to start drawing
 const startDraw = (e) => {
     isDrawing = true;
     prevMouseX = e.offsetX; // passing current mouseX position as prevMouseX value
@@ -113,11 +116,13 @@ colorPicker.addEventListener("change", () => {
     colorPicker.parentElement.click();
 });
 
+//clearing the canvas
 clearCanvas.addEventListener("click", () => {
     ctx.clearRect(0, 0, canvas.width, canvas.height); // clearing whole canvas
     setCanvasBackground();
 });
 
+//saving your drawing
 saveImg.addEventListener("click", () => {
     const link = document.createElement("a"); // creating <a> element
     link.download = `${Date.now()}.jpg`; // passing current date as link download value

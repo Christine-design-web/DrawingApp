@@ -140,6 +140,15 @@ section{
   background: #4A98F7;
   border: 1px solid #4A98F7;
 }
+
+.buttons .save-img:hover{
+  background: rgb(53, 46, 155);
+  border: 1px solid #4A98F7;
+  color: #fff;
+  transition: background-color 0.6s ease, border-color 0.6s ease;
+}
+
+
 .drawing-board{
   flex: 1;
   overflow: hidden;
