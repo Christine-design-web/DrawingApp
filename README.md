@@ -9,6 +9,9 @@ This is a simple drawing app built using HTML, CSS, and JavaScript. It allows us
 - Clear the canvas to start over
 - Save your drawing as an image
 
+## Inspiratins
+I got this app to reduce a lot of paper work and we are now in the tech world where most people are using internet to study and do their work and i decided to get the drawing app for the artist and anyone who would love to draw and make themselves busy and innovate drawing skills.
+
 ## Getting Started
 
 To use the app, simply open the `index.html` file in your web browser. You can then start drawing on the canvas using your mouse or touch input.
