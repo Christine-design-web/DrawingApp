@@ -7,6 +7,7 @@
   font-family: 'Poppins', sans-serif;
 }
 
+/*body styling*/
 body{
   display: flex;
   align-items: center;
@@ -18,6 +19,8 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
 }
+/*container styling*/
+
 .container{
   display: flex;
   width: 100%;
@@ -32,6 +35,8 @@ section{
   border-radius: 7px;
   
 }
+/*adding styling on the tools section*/
+
 .tools-board{
   width: 210px;
   padding: 15px 22px 0;
@@ -60,6 +65,8 @@ section{
 .option:is(:hover, .active) :where(span, label){
   color: #4A98F7;
 }
+/*adding style on the fill option section*/
+
 .option #fill-color{
   cursor: pointer;
   height: 14px;
@@ -73,6 +80,8 @@ section{
   height: 5px;
   margin-top: 10px;
 }
+/*color options fro the div class fro the selection*/
+
 .colors .options{
   display: flex;
   justify-content: space-between;
@@ -119,6 +128,8 @@ section{
   opacity: 0;
   cursor: pointer;
 }
+/* button styling and the hover options*/
+
 .buttons button{
   width: 100%;
   color: #fff;
@@ -131,6 +142,8 @@ section{
   border-radius: 4px;
   cursor: pointer;
 }
+/*the clear canvas styling*/
+
 .buttons .clear-canvas{
   color: #6C757D;
   border: 1px solid #6C757D;
@@ -151,7 +164,7 @@ section{
   color: #fff;
   transition: background-color 0.6s ease, border-color 0.6s ease;
 }
-
+/*drawing board styling*/
 
 .drawing-board{
   flex: 1;
