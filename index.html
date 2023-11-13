@@ -8,9 +8,11 @@
     <script src="script.js" defer></script>
   </head>
   <body>
+    <!-- adding div section for the whole container -->
     <div class="container">
       <section class="tools-board">
         <div class="row">
+          <!-- adding the section to add the shapes -->
           <label class="title">Shapes</label>
           <ul class="options">
             <li class="option tool" id="rectangle">
@@ -25,6 +27,7 @@
               <img src="icons/triangle.svg" alt="">
               <span>Triangle</span>
             </li>
+            <!-- option for the fill side of the drawing and shapes -->
             <li class="option">
               <input type="checkbox" id="fill-color">
               <label for="fill-color">Fill color</label>
@@ -32,6 +35,7 @@
           </ul>
         </div>
         <div class="row">
+          <!-- adding icons img -->
           <label class="title">Options</label>
           <ul class="options">
             <li class="option active tool" id="brush">
@@ -47,6 +51,7 @@
             </li>
           </ul>
         </div>
+        <!-- div for the colors to choose -->
         <div class="row colors">
           <label class="title">Colors</label>
           <ul class="options">
@@ -59,6 +64,7 @@
             </li>
           </ul>
         </div>
+        <!-- div class for the buttons of the clear and save -->
         <div class="row buttons">
           <button class="clear-canvas">Clear Canvas</button>
           <button class="save-img">Save As Image</button>
